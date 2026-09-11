@@ -12,10 +12,12 @@
 
 #lista{
     border: 1px solid black;
+    border-radius: 20px;
 }
 
 #VariacaoLista{
     border: 1px solid black;
+    border-radius: 20px;
 
 }
 
@@ -33,6 +35,7 @@
 
 #curtidas{
     border: 1px solid black;
+    border-radius: 20px;
     
 }
 
