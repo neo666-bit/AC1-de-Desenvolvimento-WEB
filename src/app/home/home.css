@@ -1,0 +1,41 @@
+.oi{
+    color:green;
+}
+
+#botao{
+    hidden: true;
+}
+
+#itemLista:hover{
+    color: green;
+}
+
+#lista{
+    border: 1px solid black;
+}
+
+#VariacaoLista{
+    border: 1px solid black;
+
+}
+
+#novoLista, #listaSelecionada {
+    margin: 10px;
+}
+
+
+#lido{
+    position: absolute;
+    top: 30px;
+    right: 15px
+    
+}
+
+#curtidas{
+    border: 1px solid black;
+    
+}
+
+#curtir{
+    margin: 10px
+}

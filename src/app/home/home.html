@@ -1,2 +1,54 @@
-<p>home works!</p>
-teste
+<div id="lista">
+    <ul>
+        @for (item of lista; track $index) {
+            <li (click)="selLista = item" id="itemLista">{{ item }}</li>
+        }
+    </ul>
+</div>
+<p></p>
+<div id="VariacaoLista">
+<div id="listaSelecionada">
+    @if(selLista == '') {
+        <h2>Selecione um elemento da lista</h2>
+    } 
+    @else {
+        <h2>Elemento Selecionado</h2>
+        <p>{{ selLista }}</p>
+    }
+</div>
+
+<div id="novoLista">
+    <input [(ngModel)]="novoRecado" placeholder="Digite um novo recado" (keyup.enter)="adicionarRecado()">
+@if (novoRecado !== '') {
+    <button [style.hidden]="false" (click)="adicionarRecado()" id="botao">
+        Adicionar
+    </button>
+    }  
+    
+</div>
+</div>
+<p></p>
+<div id="lido">
+    <button (click)="lido = !lido">
+        @if (lido) {
+            Não Lido
+        }
+        @else{
+            Lido
+        }
+    </button>
+@if(lido){
+    <p [style.color]="'green'">Lido</p>
+}
+
+@else{
+    <p [style.color]="'orange'">Não Lido</p>
+}
+</div>
+
+<div id="curtidas">
+    <div id="curtir">
+    <p>Curtidas: {{ curtidas }}</p>
+    <button (click)="curtir()">Curtir</button>
+    </div>
+</div>
